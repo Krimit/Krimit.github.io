@@ -1,0 +1,11 @@
+name: "Asher's blog"
+description: "a place for my thoughts and projects"
+
+url: "http://localhost:4000"
+
+paginate: 10
+
+permalink: pretty
+
+markdown: redcarpet
+pygments: true
