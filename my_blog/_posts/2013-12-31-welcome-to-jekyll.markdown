@@ -1,24 +1,19 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to the world!"
 date:   2013-12-31 01:12:47
-categories: jekyll update
+image: "/img/Happy-2014.jpg"
+image-width: "900"
+image-height: "300"
+categories: welcome jekyll
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+I have a hunch: the time of year during which the most new blogs are started is around new-years. So it should come as no surprise that one of my New-Years resolutions was to finally get a blog of my own. I had been learning all sorts of exciting web technologies recently including Node.js and Python. Fittingly, I even programmed a blog as a final assignment for a course at NYU (check it out: [KrimmerBlog][krimmer]) using Python and Google AppEngine. While it was a lot of fun to build, GAE seemed a bit of overkill for hosting a simple blog. So for a long time I was sure that I would end up using Wordpress. Now don't get me wrong: I’m sure Wordpress is a wonderful platform. Heck, my wife’s gorgeous [website][talia] is in Wordpress. However, every time I sat down to start building something I felt overwhelmed with the number of themes and plugins. It didn’t help that the language of choice in Wordpress is PHP. Three days ago I sat down and decided it was time to bite the bullet.
 
-Jekyll also offers powerful support for code snippets:
+I had a few projects which I wanted to highlight on my blog. As a first step, I figured it was time to start using [Github][git]. I know, I know, every programmer should be using some sort of public version control system. It took me a while to warm to the idea that other people might benefit from seeing some of my code. While getting set up I came across [GitHubPages][pages] and immediately abandoned my plans to use Wordpress. Picking up [Jekyll][jekyll] was a piece of cake, and I used Bootstrap as a template.  
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+[talia]: http://www.taliaamar.com/ 
+[git]: https://github.com
+[pages]: http://pages.github.com/
+[krimmer]: http://krimmerblog.appspot.com/
+[jekyll]: http://jekyllrb.com/   

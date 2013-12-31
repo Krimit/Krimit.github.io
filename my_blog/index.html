@@ -1,13 +1,31 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: default3
+title: Asher Krim
+root: ''
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+{% for post in site.posts limit: 10 %}
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<p class="lead">by <a href="index.php">Asher Krim</a></p>
+<hr>
+<p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_long_string }}</p>
+<hr>
+{% if post.image %}
+<img src="{{ post.image }}" width="{{ post.image-width }}" height="{{ post.image-height }}" class="img-responsive">
+{% endif %}
+<hr>
+<p>{{ post.content | truncatewords: 80 }}...</p>
+<a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+
+
+<h1><a href=""></a></h1>
+<hr>
+{% endfor %}
+
+
+<!-- pager -->
+<ul class="pager">
+<li class="previous"><a href="#">&larr; Older</a></li>
+<li class="next"><a href="#">Newer &rarr;</a></li>
+</ul>
