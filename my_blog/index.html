@@ -4,16 +4,17 @@ title: Asher Krim
 root: ''
 ---
 
-{% for post in site.posts limit: 10 %}
+{% for post in paginator.posts %}
 <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-<p class="lead">by <a href="index.php">Asher Krim</a></p>
+<p class="lead">by Asher Krim</p>
 <hr>
 <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_long_string }}</p>
 <hr>
 {% if post.image %}
 <img src="{{ post.image }}" width="{{ post.image-width }}" height="{{ post.image-height }}" class="img-responsive">
-{% endif %}
 <hr>
+{% endif %}
+
 <p>{{ post.content | truncatewords: 80 }}...</p>
 <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
@@ -26,6 +27,17 @@ root: ''
 
 <!-- pager -->
 <ul class="pager">
-<li class="previous"><a href="#">&larr; Older</a></li>
-<li class="next"><a href="#">Newer &rarr;</a></li>
+{% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+  <li class="previous"><a href="/">&larr; Older</a></li>
+  {% else %}
+  <li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Older</a></li>
+  {% endif %}
+{% endif %}
+
+{% if paginator.next_page %}
+<li class="next"><a href="/page{{ paginator.next_page }}">Newer &rarr;</a></li>
+{% endif %}
 </ul>
+
+
