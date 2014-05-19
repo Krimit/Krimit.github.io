@@ -4,7 +4,7 @@ title:  "Lessons learned from NYU"
 date:   2014-05-19 10:49:47
 image: "/img/nyu-2014.jpg"
 image-width: "900"
-image-height: "300"
+image-height: "500"
 categories: welcome jekyll
 ---
 
