@@ -28,7 +28,7 @@ Three final papers. Two presentations. One showcase. One final exam. Zero course
 
 - Try to pick project partners carefully. It is better to pick someone smart and hardworking than someone fun.
 
-- Speaking well is more important than saying something smart.
+- Speaking well is important. It's better to leave details unmentioned than to risk confusing your audience.
 
 - Presentations and posters are roadmaps, not actual papers. If it doesn't fit on the page with default font-size, you're writing too much.
 
@@ -44,7 +44,7 @@ Three final papers. Two presentations. One showcase. One final exam. Zero course
 
 - Pick the right tool for the job. Python or Unix for file manipulation, Java/C++ for heavy lifting, Python or Node.js for web, Scala for concurrent applications. C is almost never the right tool.
 
-- The three courses that changed the way I look at software and computers: Intro to Algorithms, Production Quality Software, and Foundations of Machine Learning.
+- The three courses that changed the way I look at software and computers: Fundamental Algorithms, Production Quality Software, and Foundations of Machine Learning.
 
 
 [DL]: http://cilvr.nyu.edu/doku.php?id=software:overfeat:start
