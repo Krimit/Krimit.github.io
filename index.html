@@ -1,43 +1,17 @@
 ---
 layout: default3
-title: Asher Krim
+title: Home
 root: ''
 ---
 
-{% for post in paginator.posts %}
-<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-<p class="lead">by Asher Krim</p>
+<div class="row show-grid">
+  <div class="span1"><h1>About Me</h1></div>
+  <img src="/img/hawaii-beach.jpg" width="900" height="500" class="img-responsive">
+  <p style="text-align:center; font-size:80%">Maui, Hawaii, August 2012.</p>
+  <hr>
+  <div class="span1"><p>
+  	whhhhhat <br />
+  </p>
+  </div>
+</div> 
 <hr>
-<p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date_to_long_string }}</p>
-<hr>
-{% if post.image %}
-<img src="{{ post.image }}" width="{{ post.image-width }}" height="{{ post.image-height }}" class="img-responsive">
-<hr>
-{% endif %}
-
-<p>{{ post.content | truncatewords: 80 }}...</p>
-<a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-
-
-<h1><a href=""></a></h1>
-<hr>
-{% endfor %}
-
-
-<!-- pager -->
-<ul class="pager">
-{% if paginator.previous_page %}
-  {% if paginator.previous_page == 1 %}
-  <li class="previous"><a href="/">&larr; Older</a></li>
-  {% else %}
-  <li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Older</a></li>
-  {% endif %}
-{% endif %}
-
-{% if paginator.next_page %}
-<li class="next"><a href="/page{{ paginator.next_page }}">Newer &rarr;</a></li>
-{% endif %}
-</ul>
-
-
