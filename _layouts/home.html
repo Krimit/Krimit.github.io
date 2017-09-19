@@ -6,16 +6,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Asher Krim</title>
+    <title>{{ site.name }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="{{ relative }}css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <link href="css/blog-home.css" rel="stylesheet">
+    <link href="{{ relative }}css/blog-home.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <link href="css/my.css" rel="stylesheet">
+    <link href="{{ relative }}css/my.css" rel="stylesheet">
 
   </head>
 
@@ -30,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Asher Krim</a>
+          <a class="navbar-brand" href="/">{{ site.name }}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,15 +50,7 @@
 
       <div class="row">
         <div class="col-lg-8">
-          <div class="row show-grid">
-  <div class="col-md-6">
-    <img src="/img/hakone.png" width="450" height="250" class="img-responsive">
-  </div>
-  <div class="col-md-6">
-  	<h1>Hi, I'm Asher</h1>
-  	<p><big>I do Software and Machine Learning</big></p>
-  </div>
-</div>        
+          {{ content }}       
         </div>
       
       </div>
@@ -88,8 +80,8 @@
     </div><!-- /.container -->
 
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="{{ relative }}js/jquery-1.10.2.js"></script>
+    <script src="{{ relative }}js/bootstrap.js"></script>
 
   </body>
 </html>
