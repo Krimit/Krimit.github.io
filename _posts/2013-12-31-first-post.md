@@ -5,7 +5,7 @@ date:   2013-12-31 01:12:47
 image: "/img/Happy-2014.jpg"
 image-width: "900"
 image-height: "300"
-categories: welcome jekyll
+categories: posts
 ---
 
 I have a hunch: the time of year during which the most new blogs are started is around new-years. So it should come as no surprise that one of my New-Years resolutions was to finally get a blog of my own. I had been learning all sorts of exciting web technologies recently including Node.js and Python. Fittingly, I even programmed a blog as a final assignment for a course at NYU (check it out: [KrimmerBlog][krimmer]) using Python and Google AppEngine. While it was a lot of fun to build, GAE seemed a bit of overkill for hosting a simple blog. So for a long time I was sure that I would end up using Wordpress. Now don't get me wrong: I’m sure Wordpress is a wonderful platform. Heck, my wife’s gorgeous [website][talia] is in Wordpress. However, every time I sat down to start building something I felt overwhelmed with the number of themes and plugins. It didn’t help that the language of choice in Wordpress is PHP. Three days ago I sat down and decided it was time to bite the bullet.

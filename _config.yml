@@ -1,11 +1,20 @@
-name: "Asher Krim"
-description: "a place for my thoughts and projects"
+title: Asher Krim - Software Engineer
+email: krim.asher@gmail.com
+description: "Asher Krim Software Engineer and Machine Learning Practitioner"
 
-url: "http://localhost:4000"
+baseurl: "/"
+url: "http://asherkrim.com"
+#url: "http://localhost:4000"
+github_username:  Krimit
 
-paginate: 10
+name: Asher Krim
+
+paginate: 5
+paginate_path: /blog:num
 
 permalink: pretty
 
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
+
+plugins: [jekyll-paginate]
